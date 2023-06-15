@@ -1,3 +1,223 @@
+html {
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color: rgb(6, 18, 42);
+    --secondary-color: rgb(15, 67, 104);
+    --tertiary-color: rgb(188, 138, 112);
+    --backup-color: rgb(241, 217, 206);
+    --white--color: rgb(255, 255, 255);
+}
+
 body {
     font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    scroll-behavior: smooth;
+  
+}
+
+.home--header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-evenly;
+    height: 5rem;
+    align-items: center;
+    color: var(--tertiary-color);
+    box-shadow: 5px 0 2px 0 var(--backup-color);
+}
+
+.home--header__img {
+    height: 1.9rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+   
+}
+
+.home--nav .home--list {
+    display: flex;
+    list-style: none;
+}
+
+.home--list__item  a {
+    margin-right: 0.3rem;
+    font-size: 0.8rem;
+    color: var(--tertiary-color);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.home--list__item a:hover {
+    color: var(--backup-color);
+}
+
+.main--header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ .main--page__header {
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-block: 2.8rem;
+    border-right: 0.3rem solid var(--secondary-color);
+    white-space:nowrap;
+    overflow: hidden; 
+    animation: draw 8s steps(20) infinite;
+}
+
+@keyframes draw {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 270px;
+    }
+}
+
+ .main--section, .main--aside {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main--section__body, 
+.main--section__img, 
+.main--section__info,
+.main--section__paragraph,
+.main--section__lang,
+.main--aside,
+.main--aside__motivation,
+.main-aside__header,
+.main-aside__paragraph,
+.main--aside__social,
+.main--aside__list,
+.main--aside__subscribe,
+.html,
+.css,
+.javascript,
+.fa-code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main--section__link,
+.main--aside__subscribe a  {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--tertiary-color);
+    padding: 10px 15px;
+    color: var(--white--color);
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+    transition: all .5s ease-in-out;
+}
+
+.main--section__link:hover,
+.main--aside__subscribe a:hover  {
+    background: var(--backup-color);
+    color: var(--tertiary-color);
+}
+
+.main--section__title {
+    color: var(--primary-color);
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.hero--main_span {
+    margin-bottom: 0.6rem;
+}
+
+.main--section__img img {
+    display: block;
+    max-width: 100%;
+    width: 18.7rem;
+    border-radius: 0.3rem;
+}
+
+figcaption {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.main--section__paragraph,
+.main--section__html-paragraph,
+.main--section__css-paragraph,
+.main-aside__paragraph,
+.main--section__javascript-paragraph{
+    font-size: 0.9rem;
+    width: 85%;
+}
+
+
+.main--section__languages,
+.main--aside__header,
+.main--aside__title {
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+
+.main--section__html-header,
+.main--section__css-header,
+.main--section__javascript-header {
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    margin-bottom: 0;
+}
+
+.main--aside__list {
+    flex-direction: row;
+    gap: 2.9rem;
+    list-style: none;
+    margin-left: -33px;
+    
+}
+
+.main--aside__list img {
+    height: 1.4rem;
+    transition: all 0.5s ease-in-out;
+    display: block;
+    max-width: 100%;
+}
+
+.main--aside__list img:hover {
+   transform: scale(1.2);
+}
+
+.main--aside__title {
+    margin-block: 1.5rem;
+}
+
+.main--aside__subscribe a {
+    margin-block: 3.2rem;
+
+}
+
+.footer {
+    grid-column: 1 / -1;
+    height: 10rem;
+    background: var(--primary-color);
+    color: var(--tertiary-color);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
 }

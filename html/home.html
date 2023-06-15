@@ -7,41 +7,153 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/home.css">
     <title>My Blog Website</title>
 </head>
 <body>
+
+    <!--Header Component-->
     <header class="home--header">
         <img class="home--header__img" src="/images/blog.jpg" alt="Image of scrabble pieces spelling out the word Blog">
         <h4 class="home--header__title">Blog</h4>
         <nav class="home--nav">
             <ul class="home--list">
-                <li class="home--list__item">Home</li>
-                <li class="home--list__item">About</li>
-                <li class="home--list__item">Contact</li>
+                <li class="home--list__item"><a href="home.html">Home</a></li>
+                <li class="home--list__item"><a href="#">About</a></li>
+                <li class="home--list__item"><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="hero--main">
-        <div class="container">
-            <h1 class="hero--main__header">my unorthodox path to web development</h1>
-            <div>
-                <a class="hero--main__link" href="#">subscribe</a>
-                <h2 class="hero--main__title">the journey</h2>
-                <span class="hero--main_span">June 13, 2023 by <a class="hero--main__small-link" href="#">Fred</a></span>
-                <figure>
-                    <img class="hero--main__img" src="/images/computer-image.jpg">
-                    <figcaption>
-                        A screenshot of computer code
-                    </figcaption>
-                </figure>
-            
+    <!--Main Page Header--> 
+    <div class="main--header">
+        <h1 class="main--page__header">my web dev path</h1>
+    </div>
+
+    <!--Main Section-->
+    <section class="main--section">
+        <div class="main--section__info">
+            <a class="main--section__link" href="#">subscribe</a>
+            <h2 class="main--section__title">the journey</h2>
+            <span class="hero--main_span">June 13, 2023 by <a class="hero--main__small-link" href="#">Fred</a></span>
+        </div>
+        <div class="main--section__body">
+            <div class="main--section__img">
+                <img src="/images/computer-image.jpg" alt="image of code on a scree">
+                <figcaption>
+                    A screenshot of computer code
+                </figcaption>
+            </div>
+            <div class="main--section__paragraph">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Cum perspiciatis facere possimus hic maiores, 
+                    doloremque sit eligendi eaque molestias impedit veritatis, 
+                    nihil error accusamus perferendis culpa accusantium! 
+                    Doloremque atque saepe quod nihil illum esse nulla voluptas, 
+                    obcaecati quasi amet laboriosam ea. Dicta voluptatibus, 
+                    accusantium consequuntur iure libero laborum quibusdam dolor est 
+                    vitae harum quam obcaecati deleniti nostrum adipisci in reiciendis eligendi, 
+                    recusandae aliquam incidunt totam magnam ab facere beatae! Architecto ipsa deserunt
+                    accusantium et excepturi quidem consectetur est inventore explicabo! Quasi nemo esse
+                    assumenda nam laboriosam pariatur tempore sit. Est eius, repudiandae sequi reprehenderit
+                    fugiat nulla? Obcaecati id dolorem ipsum. 
+                </p>
             </div>
         </div>
-        
-        
-    </main>
+
+        <!--Main Section languages-->
+        <h2 class="main--section__languages">languages to learn</h2>
+        <div class="main--section__lang">
+            <div class="html">
+                <div class="main--section__html">
+                    <h4 class="main--section__html-header">html</h4>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                </div>
+                <div class="main--section__html-paragraph">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Aspernatur ab voluptatem animi doloribus architecto dolores quaerat, 
+                        iste deserunt vero ullam! 
+                    </p>
+                </div>
+            </div>
+            <div class="css">
+                <div class="main--section__css">
+                    <h4 class="main--section__css-header">css</h4>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                </div>
+                <div class="main--section__css-paragraph">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Enim adipisci eveniet nobis autem mollitia veritatis doloribus 
+                        fugiat illum architecto impedit!
+                    </p>
+                </div>
+            </div>
+            <div class="javascript">
+                <div class="main--section__javascript">
+                    <h4 class="main--section__javascript-header">javascript</h4>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                </div>
+                <div class="main--section__javascript-paragraph">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Distinctio accusamus corporis et commodi asperiores quod 
+                        quia quam repellat neque nulla?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Aside Section-->
+    <section class="main--aside">
+        <div class="main--aside__motivation">
+            <div class="main-aside__header">
+                <h3 class="main--aside__header">motivation</h3>
+            </div>
+            <div class="main-aside__paragraph">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quo sequi aut nam. Porro laudantium maiores autem ipsam enim sit assumenda, 
+                    possimus recusandae, amet molestias expedita optio iste, 
+                    iusto nostrum id quos atque molestiae tenetur qui ab! Et perspiciatis beatae aspernatur? 
+                </p>
+            </div>
+        </div>
+        <div class="main--aside__social">
+            <h3 class="main--aside__title">more information</h3>
+            <ul class="main--aside__list">
+                <li class="main--aside__linkedin">
+                    <a href="#">
+                        <img src="/images/small_linkedin_social_icon .png" alt="image of linkedin">
+                    </a>
+                </li>
+                <li class="main--aside__github">
+                    <a href="#">
+                        <img class="small" src="/images/small_github_icon.png" alt="image of github">
+                    </a>
+                </li>
+                <li class="main--aside__twitter">
+                    <a href="#">
+                        <img   src="/images/small_twitter_social_icon.png" alt="image of twitter">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main--aside__subscribe">
+            <a href="#" class="main--aside__link-two">contact</a>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <p class="footer--paragraph">
+            &copy;2023 blog post
+        </p>
+    </footer>
     
 </body>
 </html>
