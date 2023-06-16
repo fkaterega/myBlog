@@ -53,7 +53,8 @@ body {
     cursor: pointer;
 }
 
-.home--list__item a:hover {
+.home--list__item a:hover, 
+.hero--main__small-link:hover  {
     color: var(--backup-color);
 }
 
@@ -149,6 +150,7 @@ body {
     display: block;
     max-width: 100%;
     width: 18.7rem;
+    /* width: 100%; */
     border-radius: 0.3rem;
 }
 
@@ -198,7 +200,7 @@ figcaption {
 }
 
 .main--aside__list img:hover {
-   transform: scale(1.2);
+   transform: scale(1.5);
 }
 
 .main--aside__title {
@@ -219,5 +221,5 @@ figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1.2rem;
+    margin-top: 1.5rem;
 }
