@@ -1,0 +1,108 @@
+html {
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color: rgb(6, 18, 42);
+    --secondary-color: rgb(15, 67, 104);
+    --tertiary-color: rgb(188, 138, 112);
+    --backup-color: rgb(241, 217, 206);
+    --white--color: rgb(255, 255, 255);
+}
+
+.form--grid {
+   grid-column: 1 / -1;
+   width: 80%;
+   margin: 0 auto;
+}
+
+.form--grid__header {
+    text-transform: capitalize;
+    color: var(--primary-color);
+    text-align: center;
+ 
+}
+
+button {
+    width: 100%;
+    text-align: center;
+    background: var(--secondary-color);
+    color: var(--white--color);
+    padding: 0.7rem 0.9rem;
+    border: none;
+    margin-block: 1.5rem;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+button:hover {
+    background: rgba(15, 67, 104, 0.5);
+    color: var(--tertiary-color);
+}
+
+form {
+    border: 2px solid var(--tertiary-color);
+    padding: 0.4rem;
+    margin-bottom: 0.85rem;
+}
+
+legend {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.input {
+    margin-bottom: 0.7rem;
+}
+
+#firstName,
+#lastName,
+#email,
+#phone,
+#title,
+#suffix {
+    border: 1px solid var(--backup-color);
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+    width: 90%;
+}
+
+.footer {
+  grid-row: auto;
+}
+
+@media(min-width: 600px) {
+    .form--grid {
+        width: 65%;
+        height: 100%;
+    }
+
+    .form--grid__header {
+        margin-bottom: 2rem;
+        font-size: 2.3rem;
+    }
+
+    .input {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+    }
+   label {
+    white-space:nowrap;
+    margin-right: 1.2rem;
+    font-size: 1.2rem;
+   }
+
+   button {
+    padding: 0.9rem 0.7rem;
+    font-size: 1.2rem;
+   }
+
+   legend {
+    font-size: 1.1rem;
+   }
+
+}
