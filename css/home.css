@@ -78,7 +78,13 @@ body {
     border-right: 0.3rem solid var(--secondary-color);
     white-space:nowrap;
     overflow: hidden; 
-    animation: draw 8s steps(20) infinite;
+    animation: draw 6s steps(20) infinite;
+}
+
+.bottom {
+    border-bottom: 2px solid var(--backup-color);
+    margin-top: 1.2rem;
+    border-width: 0.1rem;
 }
 
 @keyframes draw {
@@ -228,12 +234,51 @@ figcaption {
     margin-top: 1.5rem;
 }
 
-@media (min-width: 700px) {
+
+
+
+@media(min-width: 600px) and (max-width: 850px) {
+    .main--section__img img {
+        width: 34.7rem;
+        height: 20rem;
+    }
+
+    .main--section__link,
+    .main--section__title,
+    .hero--main_span {
+        display: none;
+    }
+
+    .main--page__header {
+        border-right: none;
+    }
+
+    @keyframes draw {
+        from {
+            display: none;
+        }
+    
+        to {
+            display: none;
+        }
+    }
+  
+}
+
+
+
+@media (min-width: 850px) {
     body {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-auto-rows: minmax(100px, auto);
         /* grid-gap: 0.2rem; */
+    }
+
+    .main--section__link,
+    .main--section__title,
+    .hero--main_span {
+        display: none;
     }
 
     .home--header,
@@ -270,4 +315,18 @@ figcaption {
         font-size: 3rem;
         margin-block: 3.5rem;
     }
+
+    @keyframes draw {
+        from {
+            width: 0px;
+        }
+    
+        to {
+            width: 448px;
+        }
+    }
+
+   .footer {
+    margin-top: 6rem;
+   }
 }
