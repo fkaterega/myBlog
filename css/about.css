@@ -13,7 +13,6 @@ html {
 
 .flex--container {
    grid-column: 1 / -1;
-   width: 90%;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -30,9 +29,8 @@ html {
 .main--card__img img {
     max-width: 100%;
     display: block;
-    width: 400px;
-    height: 350px;
-    border-radius: 50%;
+    width: 350px;
+    height: 300px;
     border: 5px solid var(--tertiary-color);
 }
 
@@ -45,7 +43,7 @@ html {
 }
 
 .main--card__title {
-    font-size: 2rem;
+    font-size: clamp(1.7rem, 1.5vw, 2rem);
     color: var(--primary-color);
     font-weight: 900;
     margin-top: 3rem;
@@ -61,10 +59,15 @@ html {
     color: var(--secondary-color);
     letter-spacing: 2px;
     margin-top: 0.2rem;
+    text-align: center;
 }
 
 .main--card__bio,
 .main--card__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-transform: capitalize;
     color: var(--primary-color);
     font-size: 1.8rem;
@@ -77,14 +80,21 @@ html {
     width: 60%;
 }
 
-ul li::marker {
+.main--card__ul li { 
+     margin-left: 2.2rem; 
+    
+}
+
+.main--card__ul li::marker {
     color: var(--tertiary-color);
 }
 
 .main--card__links {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     margin-block: 2rem;
+    margin-left: 0.3rem;
 }
 
 .main--card__links a {
@@ -107,7 +117,7 @@ ul li::marker {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    margin-block: 4rem;
 }
 
 .main--misc img{
@@ -120,5 +130,12 @@ ul li::marker {
 @keyframes ball {
     0% {
        transform: rotate(-360deg);
+    }
+}
+
+@media(max-width: 500px) {
+    .main--card__img img {
+        width: 250px;
+        height: 200px;
     }
 }
