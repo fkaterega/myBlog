@@ -154,13 +154,13 @@ body {
 
 .hero--main_span {
     margin-bottom: 0.6rem;
+    color: var(--tertiary-color);
 }
 
 .main--section__img img {
     display: block;
     max-width: 100%;
     width: 18.7rem;
-    /* width: 100%; */
     border-radius: 0.3rem;
 }
 
@@ -198,7 +198,7 @@ figcaption {
     flex-direction: row;
     gap: 2.9rem;
     list-style: none;
-    margin-left: -33px;
+    margin-left: -37px;
     
 }
 
@@ -220,6 +220,13 @@ figcaption {
 .main--aside__subscribe a {
     margin-block: 3.2rem;
 
+}
+
+.linkedin,
+.twitter,
+.github {
+    background: var(--backup-color);
+    padding: 0.1rem;
 }
 
 .footer {
@@ -272,7 +279,6 @@ figcaption {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-auto-rows: minmax(100px, auto);
-        /* grid-gap: 0.2rem; */
     }
 
     .main--section__link,

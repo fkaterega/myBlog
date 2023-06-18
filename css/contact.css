@@ -73,7 +73,7 @@ legend {
   grid-row: auto;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 630px) {
     .form--grid {
         width: 65%;
         height: 100%;
