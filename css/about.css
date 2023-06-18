@@ -1,0 +1,124 @@
+html {
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color: rgb(6, 18, 42);
+    --secondary-color: rgb(15, 67, 104);
+    --tertiary-color: rgb(188, 138, 112);
+    --backup-color: rgb(241, 217, 206);
+    --white--color: rgb(255, 255, 255);
+}
+
+.flex--container {
+   grid-column: 1 / -1;
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.main--card__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.main--card__img img {
+    max-width: 100%;
+    display: block;
+    width: 400px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid var(--tertiary-color);
+}
+
+.main--card__info,
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main--card__title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: 900;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.main--card__title span {
+    color: var(--tertiary-color);
+}
+
+.main--card__desc {
+    font-size: 1.9rem;
+    color: var(--secondary-color);
+    letter-spacing: 2px;
+    margin-top: 0.2rem;
+}
+
+.main--card__bio,
+.main--card__list {
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 4px solid var(--tertiary-color);
+   
+}
+
+.main--card__paragraph {
+    width: 60%;
+}
+
+ul li::marker {
+    color: var(--tertiary-color);
+}
+
+.main--card__links {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 2rem;
+}
+
+.main--card__links a {
+    display: inline-block;
+    width: 6rem;
+    text-decoration: none;
+    padding: 0.9rem 1.2rem;
+    background: var(--tertiary-color);
+    margin-right: 1.5rem;
+    color: var(--white--color);
+    text-align: center;
+}
+
+.main--card__links a:hover {
+    background: var(--backup-color);
+    color: var(--tertiary-color);
+}
+
+.main--misc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.main--misc img{
+    max-width: 100%;
+    display: block;
+    width: 20%;
+    animation: ball 2s ease-in-out infinite;
+}
+
+@keyframes ball {
+    0% {
+       transform: rotate(-360deg);
+    }
+}
